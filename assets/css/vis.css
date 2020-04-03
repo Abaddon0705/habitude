@@ -1,0 +1,235 @@
+      .liquidFillGaugeText {
+        font-family: Helvetica;
+        font-weight: bold;
+      }
+
+      .food-buttons {
+        height: 100%;
+        margin: auto;
+        position: relative;
+        display: none;
+      }
+
+      .food-buttons button {
+        background-color: #53db97;
+        /* Green background */
+        border: 1px solid #53db97;
+        /* Green border */
+        color: white;
+        /* White text */
+        padding: 10px 24px;
+        /* Some padding */
+        cursor: pointer;
+        /* Pointer/hand icon */
+        float: right;
+        /* Float the buttons side by side */
+      }
+
+      .food-buttons button:not(:last-child) {
+        border-right: none;
+        /* Prevent double borders */
+      }
+
+      /* Clear floats (clearfix hack) */
+
+      .food-buttons:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .gauges:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      /* Add a background color on hover */
+
+      .food-buttons button:hover {
+        background-color: #62bc8e;
+      }
+
+      .form-style-10 {
+        height: auto;
+        width: 50vw;
+        padding: 30px;
+        left:50%;
+        bottom:10px;
+        margin-left: -25vw;
+        background: #FFF;
+        position:absolute;
+        opacity:0.75;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+        -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+        -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+      }
+
+      .form-style-10 .inner-wrap {
+        padding: 5px;
+        background: #F8F8F8;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+
+      .form-style-10 h1 {
+        background: #4CAF50;
+        position: fixed;
+        bottom: 250px;
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        color: #fff;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+        font: normal 30px 'Bitter', serif;
+        -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+        -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+        box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+        border: 1px solid #4CAF50;
+      }
+
+      .form-style-10 label {
+        display: block;
+        font: 13px Arial, Helvetica, sans-serif;
+        color: #888;
+        margin-bottom: 15px;
+      }
+
+      .form-style-10 .section {
+        font: normal 20px 'Bitter', serif;
+        color: #42B147;
+        margin-bottom: 5px;
+      }
+
+      /* Clear floats after the columns */
+
+      .form-style-10 .section:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .form-style-10 .inner-wrap label {
+        max-width: 100%;
+        word-wrap: break-word;
+      }
+
+      .row-1-left-column {
+        float: left;
+        width: 30%;
+      }
+
+      .row-1-right-column {
+        float: left;
+        width: 70%;
+      }
+
+      .row-2-left-column {
+        float: left;
+        width: 50%;
+      }
+
+      .row-2-right-column {
+        float: right;
+        width: 40%;
+      }
+
+      .row-3-1 {
+        float: left;
+        width: 100%;
+      }
+
+      .row-3-2 {
+        float: center;
+        width: 80%;
+        padding-left: 15%;
+      }
+
+      div.tooltip {
+        position: absolute;
+        text-align: center;
+        width: 150px;
+        height: auto;
+        font: 12px sans-serif;
+        padding: 5px;
+        background-color: white;
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        pointer-events: none;
+        opacity: 1;
+      }
+
+      div.tooltip h1 {
+        width: 150px;
+        margin: -10px 0px 0px -5px;
+        padding: 5px;
+        background: #4CAF50;
+        border-radius: 10px 10px 0 0;
+        -webkit-border-radius: 10px 10px 0 0;
+        -moz-border-radius: 10px 10px 0 0;
+        color: white;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+        font: 12px sans-serif;
+      }
+
+      div.tooltip p {
+        text-align: left;
+      }
+
+      #legend {
+        overflow: hidden;
+      }
+
+      .legend {
+        float: right;
+        margin-right: 1em;
+      }
+
+      .food-name {
+        margin: 0 !important;
+      }
+
+      .key-dot {
+        display: inline-block;
+        height: 10px;
+        margin-right: .5em;
+        width: 10px;
+      }
+
+      .food-one {
+        background: #fbff04;
+      }
+
+      .food-two {
+        background: #c204ff;
+      }
+
+      .next-button {
+        position: absolute;
+        padding: 6px 11px;
+        top: 5vh;
+        right: 5vw;
+        border: 0;
+        background: rgba(234, 239, 236, .5);
+        color: #949aa3;
+        width:10%;
+        font-size:1em;
+      }
+
+      .back-button {
+        position: absolute;
+        padding: 6px 11px;
+        left: 5vw;
+        top: 5vh;
+        border: 0;
+        background: rgba(234, 239, 236, .5);
+        color: #949aa3;
+        display: none;
+      }
+      .spreadHead{
+        font-size: 1vw;
+      }
